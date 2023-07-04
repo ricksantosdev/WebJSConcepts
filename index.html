@@ -2,12 +2,13 @@
 <html lang="pt-BR">
 
 <head>
-    <title>Web Concepts</title>
-
+    <title>Laboratórios de Redes</title>
+    <meta charset="utf-8"/>
     <script src="scripts/jquery360.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
 
+    <link href="style/style.css" rel="stylesheet">
     <link href="style/bootstrap.min.css" rel="stylesheet">
     <link href="style/bootstrap-grid.min.css" rel="stylesheet">
     <link href="style/bootstrap-reboot.min.css" rel="stylesheet">
@@ -17,32 +18,110 @@
 <body>
    <div class="container">
     <form>
-        <div class="card" >
-            <div class="card-header">
-                Exemplo 1
+      <fieldset >
+            <Legend class="texto-titulo" style="background-color:darkblue">Laboratório de Redes </Legend>
+      </fieldset>  
+      <div class="card" >
+            <div class="card-header texto-titulo"  >
+                PING
             </div>
             <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3">
-                </div>
+                <div class="col-sm-12">
+                 <span class="">
+                  O utilitário ping (analogia com o jogo de ping-pong) serve para verificar a resposta de
+                  um outro servidor na rede até a camada de rede. O ping envia pacotes ICMP (Internet
+                  Control Message Protocol) requisitando uma resposta do servidor remoto. A resposta do
+                  servidor normalmente é o mesmo pacote enviado. Ou seja, a máquina remota
+                  simplesmente devolve os dados que ela recebeu. O objetivo é testar se além da rede
+                  estar funcionando corretamente até a camada de rede, a mesma não está fazendo
+                  nenhuma tradução nos bytes enviados.
+                 </span>
+                 <p style="text-align: center; font-size: 30px; font-weight: bold; color: blue;">
+                  C:\> ping wwww.uol.com.br
+                 </p>
+                </div>               
               </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3">
-                </div>
+             
               </div>
-              <div class="form-group row">
-                
-                <div class="col-sm-10">
-                 <button class="btn btn-success" id="btnteste"> Clique </button>
-                </div>
+              <div class="card-header texto-titulo" style="background-color: chartreuse;" >
+                TRACEROUTE
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                 <span class="">
+                  utilitário traceroute serve para nos mostrar por onde um pacote IP trafega quando é
+enviado. Esse utilitário é tão útil quanto o ping e no windows está disponível com o
+nome de tracert, com seu resultado um administrado de rede pode verificar em qual
+ponto uma comunicação pode estar rompida ou com tráfego congestionado.
+                 </span>
+                 <p style="text-align: center; font-size: 30px; font-weight: bold; color: blue;">
+                  C:\> tracert wwww.uol.com.br
+                 </p>
+                </div>               
+              </div>
+             
+              <div class="card-header texto-titulo" style="background-color: aqua" >
+                NSLOOKUP
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                 <span class="">
+                  O utilitário nslookup serve para traduzir nomes de domínio para os números IP
+                  correspondentes. Este utilitário consulta os servidores de DNS (Domain Name Service)
+                  espalhados na Internet para resolver uma consulta e descobrir o endereço.
+                 </span>
+                 <p style="text-align: center; font-size: 30px; font-weight: bold; color: blue;">
+                  C:\> nslookup wwww.uol.com.br
+                 </p>
+                </div>               
+              </div>
+             
+              <div class="card-header texto-titulo" style="background-color:cadetblue" >
+                NETSTAT
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                 <span class="">
+                  O netstat serve para mostrar as conexões ativas atualmente com a máquina em questão.
+Ele lista na tela todas as conexões TCP/IP em andamento.
+                 </span>
+                 <p style="text-align: center; font-size: 30px; font-weight: bold; color: blue;">
+                  C:\> netstat
+                 </p>
+                </div>               
+              </div>
+
+              <div class="card-header texto-titulo" style="background-color: blue" >
+                IPCONFIG
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                 <span class="">
+                  No Windows existem o aplicativo IPCONFIG utilizado para informar a configuração
+atual de rede da máquina.
+                 </span>
+                 <p style="text-align: center; font-size: 30px; font-weight: bold; color: blue;">
+                  C:\> ipconfig
+                 </p>
+                </div>               
+              </div>
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+
+
               </div>
         </div>
-        <fieldset>
-            
-        </fieldset>
+      
     </form>
    </div>
 </body>
